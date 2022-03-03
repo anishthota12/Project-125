@@ -21,7 +21,6 @@ function gotPoses(results) {
         rightWristX = results[0].pose.rightWrist.x;
         difference = Math.floor(leftWristX - rightWristX);
         console.log("Left Wrist X: " + Math.round(leftWristX) + ", Right Wrist X: " + Math.round(rightWristX));
-        document.getElementById("fontSize").innerHTML = "Font Size: " + Math.round(difference / 1.5) + "px";
     }
 }
 
@@ -31,6 +30,9 @@ function modelLoaded() {
 
 function draw() {
     background("#FFF");
+    
+    document.getElementById("fontSize").innerHTML = "Font Size: " + Math.round(difference / 1.5) + "px";
+
     textSize(difference / 1.5); // I divided by 1.5 to make the text fit inside the canvas
     textFont('fontItalic');
     text("Anish", 0, 325);
