@@ -21,7 +21,7 @@ function gotPoses(results) {
         rightWristX = results[0].pose.rightWrist.x;
         difference = Math.floor(leftWristX - rightWristX);
         console.log("Left Wrist X: " + Math.round(leftWristX) + ", Right Wrist X: " + Math.round(rightWristX));
-        document.getElementById("fontSize").innerHTML = "Font Size: " + (difference / 1.5);
+        document.getElementById("fontSize").innerHTML = "Font Size: " + Math.round(difference / 1.5) + "px";
     }
 }
 
