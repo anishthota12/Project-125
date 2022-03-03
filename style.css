@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    background-color: lightblue;
+}
+
+.header {
+    font-size: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: midnightblue;
+    color: white;
+}
+
+.note {
+    position: relative;
+    font-size: 1vw;
+    margin: 0;
+    background-color: hsl(240, 67%, 60%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    z-index: 2;
+}
+
+#fontSize {
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    background-color: hsl(240, 67%, 80%);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 5vh;
+    box-shadow: 0 10px 3px 1px hsl(240, 67%, 80%);
+    font-size: 2vw;
+}
+
+#copyrightFooter {
+    position: fixed;
+    color: white;
+    width: 100%;
+    line-height: 2;
+    text-align: center;
+    background-color: darkblue;
+    box-shadow: 0 -10px 10px 10px darkblue;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 5px;
+}
+
+canvas {
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 5px solid black;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Sun Icon Styles*/
+
+.sunIcon {
+    position: absolute;
+    right: 30vw;
+    top: 5vh;
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+}
+
+.center {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.sunray {
+    width: 5px;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.sunray1 {
+    left: -10px;
+    transform: rotate(45deg);
+}
+
+.sunray2 {
+    bottom: -30px;
+    left: 45%;
+}
+
+.sunray3 {
+    right: -10px;
+    transform: rotate(-45deg);
+}
+
+.sunray4 {
+    transform: rotate(90deg);
+    right: -20px;
+    bottom: 10px;
+}
+
+.sunray5 {
+    top: -15px;
+    right: -10px;
+    transform: rotate(45deg);
+}
+
+.sunray6 {
+    top: -30px;
+    left: 45%;
+}
+
+.sunray7 {
+    left: -10px;
+    top: -15px;
+    transform: rotate(-45deg);
+}
+
+.sunray8 {
+    left: -20px;
+    top: 25%;
+    transform: rotate(90deg);
+}
